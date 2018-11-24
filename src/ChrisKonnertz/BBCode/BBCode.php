@@ -43,7 +43,7 @@ class BBCode
     /**
      * The current version number
      */
-    const VERSION = '1.2.0';
+    const VERSION = '1.1.2';
 
     /**
      * The text with BBCodes
@@ -459,10 +459,10 @@ class BBCode
             case self::TAG_NAME_SIZE:
                 if ($tag->opening) {
                     if ($tag->property) {
-                        $code = '<span style="font-size: '.$tag->property.'em">';
+                        $code = '<font size="'.$tag->property.'">';
                     }
                 } else {
-                    $code = '</span>';
+                    $code = '</font>';
                 }
                 break;
             case self::TAG_NAME_COLOR:
