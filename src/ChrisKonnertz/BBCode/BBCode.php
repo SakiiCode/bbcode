@@ -459,7 +459,7 @@ class BBCode
             case self::TAG_NAME_SIZE:
                 if ($tag->opening) {
                     if ($tag->property) {
-                        $code = '<span style="font-size: '.$tag->property.'%">';
+                        $code = '<span style="font-size: '.$tag->property.'em">';
                     }
                 } else {
                     $code = '</span>';
