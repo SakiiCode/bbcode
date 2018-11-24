@@ -43,7 +43,7 @@ class BBCode
     /**
      * The current version number
      */
-    const VERSION = '1.1.2';
+    const VERSION = '1.1.3';
 
     /**
      * The text with BBCodes
