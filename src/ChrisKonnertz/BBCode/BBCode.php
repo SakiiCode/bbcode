@@ -442,7 +442,7 @@ class BBCode
             case self::TAG_NAME_YOUTUBE:
                 if ($tag->opening) {
                     $code = '<iframe class="youtube-player" type="text/html" width="' . $this->youTubeWidth . '"\
-                        style="height:100%" src="https://www.youtube.com/embed/';
+                        style="width:100%" src="https://www.youtube.com/embed/';
                 } else {
                     $code = '" frameborder="0"></iframe>';
                 }
