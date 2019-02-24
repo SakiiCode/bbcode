@@ -78,7 +78,7 @@ class BBCode
      *
      * @var int
      */
-    protected $youTubeHeight = 385;
+    protected $youTubeHeight = 450;
 
     /**
      * BBCode constructor.
