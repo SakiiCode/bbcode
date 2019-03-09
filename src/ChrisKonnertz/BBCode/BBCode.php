@@ -39,6 +39,7 @@ class BBCode
     const TAG_NAME_CENTER    = 'center';
     const TAG_NAME_RIGHT     = 'right';
     const TAG_NAME_SPOILER   = 'spoiler';
+    const TAG_NAME_HR        = 'hr';
 
     /**
      * The current version number
@@ -502,6 +503,13 @@ class BBCode
                     $code = '</div>';
                 }
                 break;
+            case self::TAG_NAME_HR:
+                if ($tag->opening) {
+                    $code = '<hr>';
+                } else {
+                    $code = '';
+                }
+                break;
             default:
                 // Custom tags:
                 foreach ($this->customTagClosures as $name => $closure) {
@@ -687,6 +695,7 @@ class BBCode
             self::TAG_NAME_CENTER,
             self::TAG_NAME_RIGHT,
             self::TAG_NAME_SPOILER,
+            self::TAG_NAME_HR
         ];
     }
 
